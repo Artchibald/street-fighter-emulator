@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Fighter Emulator</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background: black;
+            height: 100%;
+            width: 100%;
+        }
+
+        #game {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game"></div>
+
+    <script>
+        // Where the emulator will be rendered
+        EJS_player = "#game";
+
+        // SNES emulator core
+        EJS_core = "snes";
+
+        // Path to emulator data
+        EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+
+        // Link to your local ROM in /public folder
+        EJS_gameUrl = "https://archibaldbutler.com/projects/street-fighter/street-fighter.zip";
+    </script>
+
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</body>
+
+</html>
